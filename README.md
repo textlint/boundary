@@ -15,36 +15,37 @@ npm install boundary
 ## Usage
 
 ```js
+var boundary = require('boundary');
 function lessThan(v1, v2) {
     return v1 < v2;
 }
 
 // boundary.upperBound(sortedArray, value, compare = lessThan);
-assert(upperBound([ 0, 0, 2, 3, 4 ], -1) === 0);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 0) === 2);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 1) === 2);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 2) === 3);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 3) === 4);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 4) === 5);
-assert(upperBound([ 0, 0, 2, 3, 4 ], 5) === 5);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], -1) === 0);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 0) === 2);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 1) === 2);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 2) === 3);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 3) === 4);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 4) === 5);
+assert(boundary.upperBound([ 0, 0, 2, 3, 4 ], 5) === 5);
 
 // boundary.lowerBound(sortedArray, value, compare = lessThan);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], -1) === 0);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 0) === 0);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 1) === 2);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 2) === 2);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 3) === 3);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 4) === 4);
-assert(lowerBound([ 0, 0, 2, 3, 4 ], 5) === 5);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], -1) === 0);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 0) === 0);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 1) === 2);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 2) === 2);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 3) === 3);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 4) === 4);
+assert(boundary.lowerBound([ 0, 0, 2, 3, 4 ], 5) === 5);
 
 // boundary.binarySearch(sortedArray, value, compare = lessThan);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], -1) === false);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 0) === true);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 1) === false);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 2) === true);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 3) === true);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 4) === true);
-assert(binarySearch([ 0, 0, 2, 3, 4 ], 5) === false);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], -1) === false);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 0) === true);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 1) === false);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 2) === true);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 3) === true);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 4) === true);
+assert(boundary.binarySearch([ 0, 0, 2, 3, 4 ], 5) === false);
 ```
 
 ### License
