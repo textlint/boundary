@@ -1,6 +1,6 @@
 {
   "name": "boundary",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Provides boundary functions, (upper-bound and lower-bound).",
   "author": "Yusuke SUZUKI",
   "homepage": "https://github.com/Constellation/boundary",
