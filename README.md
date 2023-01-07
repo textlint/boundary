@@ -1,6 +1,4 @@
-boundary
-==============
-
+# boundary [![Actions Status: test](https://github.com/textlint/boundary/workflows/test/badge.svg)](https://github.com/textlint/boundary/actions?query=workflow%3A"test")
 
 ## About
 
