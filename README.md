@@ -15,7 +15,7 @@ npm install boundary
 ## Usage
 
 ```js
-var boundary = require('boundary');
+import boundary from 'boundary';
 function lessThan(v1, v2) {
     return v1 < v2;
 }
