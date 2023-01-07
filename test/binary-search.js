@@ -23,7 +23,7 @@
 */
 
 import assert from 'assert'
-import { binarySearch } from '../src/index.js'
+import { binarySearch } from '../src/index'
 
 describe('binarySearch', () => {
     it('less', () => {
