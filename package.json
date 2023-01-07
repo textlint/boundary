@@ -5,13 +5,13 @@
   "keywords": [
     "algorithm"
   ],
-  "homepage": "https://github.com/Constellation/boundary",
+  "homepage": "https://github.com/textlint/boundary",
   "bugs": {
-    "url": "https://github.com/Constellation/boundary/issues"
+    "url": "https://github.com/textlint/boundary/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Constellation/boundary.git"
+    "url": "https://github.com/textlint/boundary.git"
   },
   "license": "BSD-2-Clause",
   "author": "Yusuke SUZUKI",
