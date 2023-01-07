@@ -22,8 +22,8 @@
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import * as assert from 'power-assert'
-import { binarySearch } from '../'
+import assert from 'assert'
+import { binarySearch } from '../src/index.js'
 
 describe('binarySearch', () => {
     it('less', () => {
