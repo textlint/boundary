@@ -41,10 +41,5 @@
   "bugs": {
     "url": "https://github.com/Constellation/boundary/issues"
   },
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "http://github.com/Constellation/boundary/raw/master/LICENSE.BSD"
-    }
-  ]
+  "license": "BSD-2-Clause"
 }
