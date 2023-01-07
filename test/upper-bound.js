@@ -23,7 +23,7 @@
 */
 
 import assert from 'assert'
-import { upperBound } from '../src/index.js'
+import { upperBound } from '../src/index'
 
 describe('upper-bound', () => {
     it('less', () => {

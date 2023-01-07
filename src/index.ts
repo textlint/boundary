@@ -22,11 +22,13 @@
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-function compare(v1, v2) {
+export type CompareFunction = (v1: number, v2: number) => Boolean;
+
+function compare(v1: number, v2: number) {
     return v1 < v2;
 }
 
-function upperBound(array, value, comp = compare) {
+function upperBound(array: number[], value: number, comp: CompareFunction = compare) {
     let len = array.length;
     let i = 0;
 
@@ -43,7 +45,7 @@ function upperBound(array, value, comp = compare) {
     return i;
 }
 
-function lowerBound(array, value, comp = compare) {
+function lowerBound(array: number[], value: number, comp: CompareFunction = compare) {
     let len = array.length;
     let i = 0;
 
@@ -60,7 +62,7 @@ function lowerBound(array, value, comp = compare) {
     return i;
 }
 
-function binarySearch(array, value, comp = compare) {
+function binarySearch(array: number[], value: number, comp: CompareFunction = compare) {
     let cursor = lowerBound(array, value, comp);
     return cursor !== array.length && !comp(value, array[cursor]);
 }
