@@ -22,8 +22,8 @@
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import * as assert from 'power-assert'
-import { lowerBound } from '../'
+import assert from 'assert'
+import { lowerBound } from '../src/index.js'
 
 describe('lower-bound', () => {
     it('less', () => {

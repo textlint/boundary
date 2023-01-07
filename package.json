@@ -2,13 +2,19 @@
   "name": "boundary",
   "version": "1.0.1",
   "description": "Provides boundary functions, (upper-bound and lower-bound).",
-  "author": "Yusuke SUZUKI",
+  "keywords": [
+    "algorithm"
+  ],
   "homepage": "https://github.com/Constellation/boundary",
+  "bugs": {
+    "url": "https://github.com/Constellation/boundary/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Constellation/boundary.git"
   },
-  "main": "lib/index.js",
+  "license": "BSD-2-Clause",
+  "author": "Yusuke SUZUKI",
   "maintainers": [
     {
       "name": "Yusuke SUZUKI",
@@ -16,30 +22,24 @@
       "web": "http://github.com/Constellation"
     }
   ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "test": "gulp test"
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build",
+    "test": "mocha \"test/**/*.{js,ts}\"",
+    "watch": "tsc -p . --watch"
   },
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-6to5": "^1.0.2",
-    "gulp-bump": "^0.1.11",
-    "gulp-espower": "^0.10.0",
-    "gulp-filter": "^2.0.0",
-    "gulp-git": "^0.5.5",
-    "gulp-mocha": "^2.0.0",
-    "gulp-sourcemaps": "^1.2.8",
-    "gulp-tag-version": "^1.2.1",
-    "power-assert": "^0.10.0"
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.18",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "ts-node-test-register": "^10.0.0",
+    "typescript": "^4.9.4"
   },
-  "keywords": [
-    "algorithm"
-  ],
-  "bugs": {
-    "url": "https://github.com/Constellation/boundary/issues"
-  },
-  "license": "BSD-2-Clause"
+  "packageManager": "npm@8.19.2"
 }

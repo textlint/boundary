@@ -22,8 +22,8 @@
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import * as assert from 'power-assert'
-import { upperBound } from '../'
+import assert from 'assert'
+import { upperBound } from '../src/index.js'
 
 describe('upper-bound', () => {
     it('less', () => {
